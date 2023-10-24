@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML 5 Boilerplate</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+  <body>
+    <!-- <span class="selected-text">consectetur adipiscing elit</span>-->
+    <span class="selected-text">consectetur adipiscing elit</span>
+    <div id="container">
+      <div id="child-p" class="edit-content" contentEditable>
+        <p> ipsum dolor sit amet, consectetur adipiscing elit. Aenean erat sem, ullamcorper eget dui at, maximus interdum massa. Suspendisse leo quam, egestas at congue in, volutpat eu urna. Phasellus molestie nisi id mi pretium, a elementum sapien tincidunt. Proin faucibus condimentum tincidunt. Quisque vel diam orci. Curabitur iaculis urna ut lorem molestie, maximus lacinia urna facilisis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris maximus nunc tortor, et commodo tellus aliquam id. Curabitur libero libero, sagittis ut erat dignissim, tincidunt sollicitudin nisl. Vestibulum gravida porta tellus a volutpat. Mauris in erat at ligula auctor laoreet sed quis turpis.</p>
+        <p> ipsum dolor sit amet, <span class="selected-text" draggable="true">consectetur adipiscing elit</span>. Aenean erat sem, ullamcorper eget dui at, maximus interdum massa. Suspendisse leo quam, egestas at congue in, volutpat eu urna. Phasellus molestie nisi id mi pretium, a elementum sapien tincidunt. Proin faucibus condimentum tincidunt. Quisque vel diam orci. Curabitur iaculis urna ut lorem molestie, maximus lacinia urna facilisis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris maximus nunc tortor, et commodo tellus aliquam id. Curabitur libero libero, sagittis ut erat dignissim, tincidunt sollicitudin nisl. Vestibulum gravida porta tellus a volutpat. Mauris in erat at ligula auctor laoreet sed quis turpis.</p>
+        <p> ipsum dolor sit amet, consectetur adipiscing elit. Aenean erat sem, ullamcorper eget dui at, maximus interdum massa. Suspendisse leo quam, egestas at congue in, volutpat eu urna. Phasellus molestie nisi id mi pretium, a elementum sapien tincidunt. Proin faucibus condimentum tincidunt. Quisque vel diam orci. Curabitur iaculis urna ut lorem molestie, maximus lacinia urna facilisis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris maximus nunc tortor, et commodo tellus aliquam id. Curabitur libero libero, sagittis ut erat dignissim, tincidunt sollicitudin nisl. Vestibulum gravida porta tellus a volutpat. Mauris in erat at ligula auctor laoreet sed quis turpis.</p>
+        <p> ipsum dolor sit amet, consectetur adipiscing elit. Aenean erat sem, ullamcorper eget dui at, maximus interdum massa. Suspendisse leo quam, egestas at congue in, volutpat eu urna. Phasellus molestie nisi id mi pretium, a elementum sapien tincidunt. Proin faucibus condimentum tincidunt. Quisque vel diam orci. Curabitur iaculis urna ut lorem molestie, maximus lacinia urna facilisis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris maximus nunc tortor, et commodo tellus aliquam id. Curabitur libero libero, sagittis ut erat dignissim, tincidunt sollicitudin nisl. Vestibulum gravida porta tellus a volutpat. Mauris in erat at ligula auctor laoreet sed quis turpis.</p>
+      </div>
+    </div>
+  
+    <!-- <button id="buttonAdd">Add</button>
+
+  <button id="buttonRemove">Remove</button> -->
+	<script src="src/index.js"></script>
+  <script >
+    
+    var childP = document.getElementById("child-p");
+    
+    var container = document.getElementById("container");
+    // var buttonAdd = document.getElementById("buttonAdd");
+    // var buttonRemove = document.getElementById("buttonRemove");
+    
+    // buttonAdd.addEventListener("click", function(){
+    //   putCanvasOver(document, canvas);
+    // });
+
+    // buttonRemove.addEventListener("click", function(){
+    //   removeCanvasOver(document, canvas);
+    // });
+
+    
+    childP.addEventListener("click", () => {console.log(getCaretPosition(childP))});
+    
+  
+  </script>
+
+
+  </body>
+</html>

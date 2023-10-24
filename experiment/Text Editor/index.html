@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS StyleSheet Link -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+
+<body>
+    <section>
+        <div class="row">
+            <div class="col">
+                <div class="first box">
+                    <input id="font-size" type="number" value="16" min="1" max="100" onchange="f1(this)">
+                </div>
+                <div class="second box">
+                    <button type="button" onclick="f2(this)">
+                        <i class="fa-solid fa-bold"></i>
+                    </button>
+                    <button type="button" onclick="f3(this)">
+                        <i class="fa-solid fa-italic"></i>
+                    </button>
+                    <button type="button" onclick="f4(this)">
+                        <i class="fa-solid fa-underline"></i>
+                    </button>
+                </div>
+                <div class="third box">
+                    <button type="button" onclick="f5(this)">
+                        <i class="fa-solid fa-align-left"></i>
+                    </button>
+                    <button type="button" onclick="f6(this)">
+                        <i class="fa-solid fa-align-center"></i>
+                    </button>
+                    <button type="button" onclick="f7(this)">
+                        <i class="fa-solid fa-align-right"></i>
+                    </button>
+                </div>
+                <div class="fourth box">
+                    <button type="button" onclick="f8(this)">aA</button>
+                    <button type="button" onclick="f9()">
+                        <i class="fa-solid fa-text-slash"></i>
+                    </button>
+                    <input type="color" onchange="f10(this)">
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col">
+               <!-- <textarea id="textarea1" placeholder="Your text here "></textarea> -->
+               <div  id="edit-container" class="edit-area" contenteditable="true">
+                  <p class="scene-heading"><span class="numbering-l">1</span>  <span class="upper">ext.</span> <span class="upper">suburban home</span> -  <span class="upper">night</span> <span class="numbering-r">1</span></p>
+                  <div class="scene">
+                     <div class="action-container draggable" draggable="true">
+                        <p class="action">RUFUS sits at a desk, figners furiously tap dancing on a keyboard. He pauses for briefing and looks at the clock on the wall. The digital display reads "5:34"</p>
+                     </div>
+                     <div class="dialogue-container draggable" draggable="true">
+                        <p class="character">ALEJANDRO</p>
+                        <p class="parenthetical">(breating heavely)</p>
+                        <div class="dialogue-text">
+                           <p class="dialogue">Hell's Bells Rufus, the trafic is insane. Is it ready?</p>
+                        </div>
+                     </div>
+                     <div class="dialogue-container draggable" draggable="true">
+                        <p class="character">ALEJANDRO</p>
+                        <p class="parenthetical">(breating heavely)</p>
+                        <div class="dialogue-text">
+                           <p class="dialogue">Hell's Bells Rufus, the trafic is insane. Is it ready?</p>
+                        </div>
+                     </div>
+                     <div class="dialogue-container draggable" draggable="true">
+                        <p class="character upper">scarlett</p>
+                        <div class="dialogue-text">
+                           <p class="dialogue">Fiddle-dee-dee. War, war, war. This war talk is spoiling all the fun at every party this spring. I get so bored I could scream. Besides, there isn't going to be any war.</p>
+                        </div>
+                     </div>
+                     <p class="transition upper draggable" draggable="true">face out</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

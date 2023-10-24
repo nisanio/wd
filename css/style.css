@@ -1,0 +1,15 @@
+
+.selected-text {
+    border: 1px solid black;
+    padding: 1px 1px;
+    border-radius: 2px;
+}
+
+.edit-content {
+    height: 200px;
+    width: 50%;
+  }
+
+  [contenteditable] {
+    outline: 0px solid transparent;
+  }
